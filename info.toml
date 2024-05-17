@@ -1,0 +1,24 @@
+[[exercises]]
+name = "hello-nix"
+path = "exercises/hello-nix/flake.nix"
+task = "Fix the `hello-nix` derivation to correctly build and install the \"Hello, Nix!\" program. Update the `buildPhase` to compile the `hello.c` file using the appropriate compiler flags."
+
+[[exercises]]
+name = "package-management"
+path = "exercises/package-management/flake.nix"
+task = "Create a custom package set that includes the specified packages. Add the packages `git`, `curl`, and `ripgrep` to the `paths` array in the `packages.default` derivation."
+
+[[exercises]]
+name = "building-with-flakes"
+path = "exercises/building-with-flakes/flake.nix"
+task = "Convert the existing Nix expression to use the Flakes system and define a package. Uncomment the `packages.default` attribute and define a derivation that builds the `flake-project` package using the provided `buildPhase` and `installPhase`."
+
+[[exercises]]
+name = "overriding-packages"
+path = "exercises/overriding-packages/flake.nix"
+task = "Override the `hello` package from Nixpkgs to modify its configuration. Update the `buildPhase` to include a custom message that is displayed when running the `hello` program."
+
+[[exercises]]
+name = "nixos-configuration"
+path = "exercises/nixos-configuration/flake.nix"
+task = "Write a NixOS configuration that sets up a basic web server. Add the necessary configuration modules to enable the Nginx web server and deploy a custom web application."
